@@ -14,8 +14,8 @@ from odxtools.odxlink import DocType, OdxDocFragment
 from odxtools.writepdxfile import (jinja2_odxraise_helper, make_bool_xml_attrib, make_ref_attribs,
                                    make_xml_attrib, set_category_docfrag, set_layer_docfrag)
 
-from .test_multiple_ecu_jobs import multiple_ecu_job_et
-from .test_vehicle_info_spec import vehicle_info_spec_et
+from test_multiple_ecu_jobs import multiple_ecu_job_et
+from test_vehicle_info_spec import vehicle_info_spec_et
 
 doc_frags = (OdxDocFragment(doc_name="mecuj_test", doc_type=DocType.FUNCTION_DICTIONARY_SPEC),)
 
