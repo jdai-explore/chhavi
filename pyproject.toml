@@ -53,6 +53,13 @@ browse-tool = [
      "InquirerPy >= 0.3.4",
 ]
 
+gui = [
+    "PySide6 >= 6.4",
+    "matplotlib >= 3.7",
+    "pyqtgraph >= 0.13",
+    "qtawesome >= 1.2",
+]
+
 test = [
      "mypy >= 1.5",
      "ruff >= 0.0.290",
@@ -65,7 +72,7 @@ examples = [
 ]
 
 all = [
-     "odxtools[browse-tool,test,examples]"
+     "odxtools[browse-tool,gui,test,examples]"
 ]
 
 [project.urls]
