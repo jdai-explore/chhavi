@@ -58,7 +58,7 @@ class MainWindow(QMainWindow):
 
     def populate_database_explorer(self, db):
         model = QStandardItemModel()
-        self.database_explorer.setModel(model)
+        self.database_explorer.tree_view.setModel(model)
 
         for ecu in db.ecus:
             ecu_item = QStandardItem(ecu.short_name)
